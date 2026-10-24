@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#151a1b" />
+  <meta name="description" content="Cub Critics is a student-led concept for discovering, rating and reviewing Towson campus food venues. Explore our early interactive preview." />
+  <title>Cub Critics — Your campus. Your cravings. Your call.</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Cub Critics homepage"><span class="brand-symbol" aria-hidden="true">C<span>★</span></span><span class="brand-words">cub<span>critics</span><small>TOWSON FOOD COMMUNITY</small></span></a>
+      <nav class="nav" aria-label="Main navigation"><a href="#explore">Explore</a><a href="#how-it-works">How it works</a><a href="#roadmap">Roadmap</a><a href="#team">Team</a></nav>
+      <a class="header-cta" href="#explore">Browse preview <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> BY STUDENTS · FOR CAMPUS</span>
+          <h1>Your campus.<br><em>Your cravings.</em><br>Your call.</h1>
+          <p>Campus food deserves real conversations. Discover places to eat, explore what students might say, and see the vision behind <strong>Cub Critics</strong>—a Towson-centered food review platform.</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="#explore">Explore the venues <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span><strong>Interactive concept preview.</strong> Venues, ratings, menus and reviews shown below are illustrative—not verified campus information or live user submissions.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a campus food review preview">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-plate"><span aria-hidden="true">🍔</span></div>
+          <div class="art-card floating-rating"><div class="art-avatar">CC</div><div><span class="art-label">THE CAMPUS VERDICT</span><strong>Food worth talking about.</strong><span class="gold-stars">★★★★★</span></div></div>
+          <div class="art-card floating-quote"><span aria-hidden="true">✦</span> Eat. Rate. Repeat.</div>
+          <div class="art-label-bottom">YOUR CAMPUS FOOD COMPASS <span>↗</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
+    </section>
+    <section class="intro-strip" aria-label="Site goals"><div class="shell strip-grid"><div><span class="strip-icon">01 /</span><strong>Find your next bite</strong><small>Search and discover venues</small></div><div><span class="strip-icon">02 /</span><strong>Share your experience</strong><small>Student reviews in the full release</small></div><div><span class="strip-icon">03 /</span><strong>Make campus better</strong><small>Honest, constructive feedback</small></div></div></section>
+    <section class="explore-section section-pad" id="explore">
+      <div class="shell">
+        <div class="section-heading"><div><span class="section-kicker">THE FOOD FINDER</span><h2>Where are we <em>eating?</em></h2><p>Explore a sample of the planned venue directory. Try searching, sorting, or filtering—the interactions work in this preview.</p></div><span class="sample-tag"><span class="pulse"></span> DEMO DATA ONLY</span></div>
+        <div class="explore-frame">
+          <div class="search-controls">
+            <label class="search-box"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><span class="sr-only">Search venue names and menu items</span><input id="search" type="search" placeholder="Search venues, categories, or menu items…" autocomplete="off"></label>
+            <label class="sort-label">Sort <select id="sort"><option value="rating">Highest rated</option><option value="name">Name A–Z</option><option value="reviews">Most reviewed</option></select></label>
+          </div>
+          <div class="filter-row"><div id="categories" class="category-filters" role="group" aria-label="Filter venues by category"></div><label class="open-toggle"><input id="open-only" type="checkbox"><span class="toggle-ui" aria-hidden="true"></span> Sample open now</label></div>
+          <div class="result-meta"><span id="result-count" aria-live="polite">Loading sample venues…</span><button class="reset-button" type="button" id="reset-filters">Clear filters ↻</button></div>
+          <div id="venue-grid" class="venue-grid" aria-live="polite"></div>
+          <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">☕</span><h3>No sample venues match.</h3><p>Try another keyword or clear your filters.</p><button class="btn btn-gold" type="button" id="empty-reset">Show all venues</button></div>
+        </div>
+        <p class="under-grid-note">Illustrative names, opening hours, ratings, menus and review counts are provided only to demonstrate the interface. No live accounts, reviews or venue database are connected.</p>
+      </div>
+    </section>
+    <section class="story-section section-pad" id="how-it-works"><div class="shell story-grid"><div class="story-label"><span class="section-kicker">BUILT AROUND STUDENT VOICES</span><h2>Good food.<br><em>Better feedback.</em></h2><p>Whether you are deciding on lunch or sharing what worked, Cub Critics is designed to make student experiences easier to find.</p><a class="text-link" href="#roadmap">See our release plan <span aria-hidden="true">↗</span></a></div><div class="story-cards"><article><span class="story-number">01</span><span class="story-emoji" aria-hidden="true">🔎</span><h3>Discover</h3><p>Browse venue pages with menus, sample hours and ratings. Narrow down choices with search and filters.</p></article><article><span class="story-number">02</span><span class="story-emoji" aria-hidden="true">⭐</span><h3>Review</h3><p>The planned student experience supports 1–5 star ratings, optional written feedback and personal review history.</p></article><article><span class="story-number">03</span><span class="story-emoji" aria-hidden="true">🛡️</span><h3>Trust</h3><p>Planned moderation gives administrators the tools to review reports and remove content that violates community rules.</p></article></div></div></section>
+    <section class="roadmap-section section-pad" id="roadmap"><div class="shell"><span class="section-kicker">FROM CONCEPT TO RELEASE</span><div class="roadmap-heading"><h2>We're just <em>getting started.</em></h2><p>This preview is a foundation—not the completed web application. Our course project plan uses three development sprints.</p></div><div class="roadmap-grid"><article class="phase-card active"><span class="phase-label">NOW · CONCEPT PREVIEW</span><span class="phase-graphic">✳</span><h3>Foundation</h3><p>Public landing page, sample venue directory, client-side search and filters, project documentation.</p><span class="phase-state">Interactive prototype</span></article><article class="phase-card"><span class="phase-label">SPRINT 01 · V1.01</span><span class="phase-graphic">01</span><h3>Accounts & browsing</h3><p>Registration, login, public venue pages, profile foundations and real data connections.</p><span class="phase-state">Planned</span></article><article class="phase-card"><span class="phase-label">SPRINT 02 · V1.02</span><span class="phase-graphic">02</span><h3>Ratings & discovery</h3><p>Student reviews, average ratings, search and filters backed by the application API.</p><span class="phase-state">Planned</span></article><article class="phase-card"><span class="phase-label">SPRINT 03 · V1.03</span><span class="phase-graphic">03</span><h3>Moderation & polish</h3><p>Administrator workflows, achievements, accessibility testing and release hardening.</p><span class="phase-state">Planned</span></article></div></div></section>
+    <section class="join-section" id="team"><div class="shell join-grid"><div><span class="section-kicker dark">MEET THE GLADIATORS</span><h2>Made by students.<br>For students.</h2><p>A software engineering course project at Towson University, built by the Gladiators team.</p><div class="team-names"><span>William Brown</span><span>Kolawole Ogunniyi</span><span>Ayden Gernatt</span></div></div><div class="join-mark" aria-hidden="true"><span>CC</span><small>GLADIATORS<br>×<br>TOWSON</small></div></div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><a class="footer-brand" href="./">cub<span>critics</span><span class="footer-star"> ★</span></a><span>Gladiators · COSC 412 · Towson University · 2026</span><a href="#main">Back to top ↑</a></div><div class="shell footer-disclaimer">Independent student course project. Not an official Towson University service. All preview venue and rating data is fictional.</div></footer>
+  <dialog id="venue-dialog" class="venue-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div><button type="button" class="dialog-close" id="dialog-close" aria-label="Close venue details">✕</button></dialog>
+</body>
+</html>
